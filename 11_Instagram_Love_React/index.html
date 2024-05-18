@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love React Button Instagram</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1673792686337-a1f69d212874"
+        alt=""
+      />
+      <i class="ri-heart-3-fill"></i>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const con = document.querySelector("#container");
+        const iBtn = document.querySelector("i");
+
+        console.log(con);
+
+        con.addEventListener("dblclick", function () {
+          iBtn.style.transform = "translate(-50%,-50%) scale(1)";
+          iBtn.style.opacity = 0.8;
+
+          setTimeout(() => {
+            iBtn.style.opacity = 0;
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>
